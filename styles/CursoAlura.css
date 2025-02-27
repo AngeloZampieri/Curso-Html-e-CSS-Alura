@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=c:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+body {
+    background-color: black;
+    height: 100vh;
+    box-sizing: border-box;
+   
+}
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10%;
+    
+}
+
+.apresentacao_conteudo{
+    color: white;
+    align-items: center ;
+    margin-left: 20vh;   
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.titulo_blog{
+    color: #22D4FD;
+    margin-left: 40vh;
+    margin-top: 0vh;
+    font-size: 35px;
+}
+
+.fonte_azul{
+    color: #22D4FD;
+}
+.saudacoes{
+   
+    color: #22D4FD;
+    font-size: 38px;
+    text-align: center;
+}
+
+
+.titulo{
+    font-size: 30px;
+    width: 615px;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.paragrafo{
+    font-size: 24px;
+    font-family: "Noto Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    text-align: center;
+}   
+
+.jovem_empresario{
+    height: 300px;
+    border-radius: 20px;
+}
+
+.botoes{    
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.botao_instagram_linkedin{
+    background-color: #22D4FD;
+    border-radius: 20px;
+    width: 220px;
+    text-align: center;
+    font-size: 24px;
+    padding: 21px 0 21px 0;
+    text-decoration: none;
+    font-family: "Noto Sans", serif;
+    color: black;
+    margin-right: 70px;
+    margin-left: 70px;
+
+}
+
+
+
+
+
