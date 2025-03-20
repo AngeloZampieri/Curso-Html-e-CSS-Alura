@@ -3,16 +3,19 @@
 
 body {
     background-color: black;
-    height: 100vh;
     box-sizing: border-box;
    
+}
+
+.cabecalho{
+    
 }
 
 .apresentacao{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10%;
+    padding: 8%;
     
 }
 
@@ -74,27 +77,53 @@ body {
 .botoes{    
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     border-radius: 10px;
     padding-top: 20px;
     padding-right: 20px;
+    gap: 20px;
+    
 }
 
 .botao_instagram_linkedin{
-    background-color: #22D4FD;
-    border-radius: 20px;
-    width: 220px;
+    border: 3px solid #22D4FD;
+    border-radius: 15px;
+    width: 300px;
     text-align: center;
     font-size: 24px;
     padding: 21px 0 21px 0;
     text-decoration: none;
     font-family: "Noto Sans", serif;
-    color: black;
+    color: #f6f6f6;
     margin-right: 70px;
     margin-left: 70px;
-
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    
 }
 
+.apresentacao_subtitulo{
+    font-size: 24px;
+    font-family: "Noto Sans", serif;
+    font-weight: 400;
+}
 
+.botao_instagram_linkedin:hover{  /*Quando você passa o mouse em cima, alterar o estilo do botão*/
+    background-color: #272727;
+    font-weight: 800;
+    font-size: 26px;
+}
 
-
-
+.rodape{
+    background-color: #22D4FD;
+    text-align: center;
+    font-size: 20px;
+    size: 10px;
+    padding: 10px;
+    border-radius: 2px;
+    font-family: "Oswald", serif;
+    font-weight: 600;
+}
