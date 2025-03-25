@@ -133,8 +133,6 @@ body {
     border-radius: 2px;
     font-family: "Oswald", serif;
     font-weight: 600;
-}
-
-.boasvindas{
-    display: flex;
+    bottom: 0;
+    width: 100%;
 }
