@@ -28,10 +28,6 @@ body {
     color: #898989;
 }
 
-.cabecalho_menu_link:marker{
-    color: #898989;
-}
-
 .apresentacao {
     display: flex;
     align-items: center;
