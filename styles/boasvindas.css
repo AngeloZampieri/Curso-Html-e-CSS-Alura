@@ -4,7 +4,6 @@
 body {
     background-color: black;
     box-sizing: border-box;
-
 }
 
 .cabecalho {
@@ -30,14 +29,11 @@ body {
 
 .boasvindas {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8%;
+    padding: 10vh 0 0 10vh;
 }
 
 .boasvindas_conteudo {
     color: white;
-    align-items: center;
     margin-left: 20vh;
     display: flex;
     flex-direction: column;
@@ -49,7 +45,7 @@ body {
     font-weight: 600;
     color: #22D4FD;
     font-family: "Oswald", serif;
-    padding-left: 10vh;
+    padding-left: 1vh;
 }
 
 .icon_informacoes{
@@ -58,14 +54,15 @@ body {
     font-size: 22px;
     font-family: "Oswald", serif;
     display: flex;
-    
+    justify-content: space-between;
     flex-direction: column;
-    align-items: center;
-
+    gap: 20px;
+    align-items:center;
 }
 
 .icon_contatos{
-
+    width: 9vh;
+    height: 9vh;
 }
 
 .subtitulo{
@@ -78,6 +75,31 @@ body {
     font-size: 22px;
 }
 
+
+.habilidades_texto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.habilidades_texto_titulo{
+    font-size: 30px;
+    color: #22D4FD;
+    font-family: "Oswald", serif;
+
+}
+
+.habilidades_texto_subtitulo{
+    display: flex;
+    font-family: "Noto Sans", serif;
+    font-size: 22px;
+    flex-direction: column;
+    list-style-type: disc;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15vh;
+}
+
 .rodape {
     background-color: #22D4FD;
     text-align: center;
@@ -86,7 +108,6 @@ body {
     border-radius: 2px;
     font-family: "Oswald", serif;
     font-weight: 600;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
