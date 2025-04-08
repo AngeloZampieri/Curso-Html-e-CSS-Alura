@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=c:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
 
 body {
     background-color: black;
     box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
+/* Cabeçalho - mantendo o estilo original */
 .cabecalho {
     padding: 1% 0 0 1%;
 }
@@ -13,6 +17,7 @@ body {
 .cabecalho_menu {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .cabecalho_menu_link {
@@ -27,87 +32,163 @@ body {
     color: #898989;
 }
 
+/* Seção de boas-vindas - mantendo layout original */
 .boasvindas {
     display: flex;
-    padding: 10vh 0 0 10vh;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    gap: 2rem;
 }
 
 .boasvindas_conteudo {
     color: white;
-    margin-left: 20vh;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2.5rem;
+    width: 100%;
+    max-width: 800px;
 }
 
-.Nome_titulo{
-    font-size: 30px;
+.Nome_titulo {
+    font-size: 1.875rem;
     font-weight: 600;
     color: #22D4FD;
-    font-family: "Oswald", serif;
-    padding-left: 1vh;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
 }
 
-.icon_informacoes{
+.icon_informacoes {
     text-align: center;
     color: #ffffff;
-    font-size: 22px;
-    font-family: "Oswald", serif;
+    font-size: 1.375rem;
+    font-family: "Oswald", sans-serif;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    gap: 20px;
-    align-items:center;
-}
-
-.icon_contatos{
-    width: 9vh;
-    height: 9vh;
-}
-
-.subtitulo{
+    gap: 1.25rem;
     align-items: center;
-    flex-direction: column;
+}
+
+.icon_contatos {
+    width: 5rem;
+    height: 5rem;
+    transition: transform 0.3s;
+}
+
+.icon_contatos:hover {
+    transform: scale(1.1);
+}
+
+.subtitulo {
     text-align: center;
-    padding-left: 10vh;
-    font-family: "Noto Sans", serif;
+    font-family: "Noto Sans", sans-serif;
     font-weight: 200;
-    font-size: 22px;
-}s
+    font-size: 1.375rem;
+    line-height: 1.6;
+    padding: 0 1rem;
+}
 
-
-.habilidades_texto{
+/* Seção habilidades - mantendo layout original */
+.habilidades_texto {
     display: flex;
     align-items: center;
     flex-direction: column;
+    margin-top: 3rem;
 }
 
-.habilidades_texto_titulo{
-    font-size: 30px;
+.habilidades_texto_titulo {
+    font-size: 1.875rem;
     color: #22D4FD;
-    font-family: "Oswald", serif;
-
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
-.habilidades_texto_subtitulo{
+.habilidades_texto_subtitulo {
     display: flex;
-    font-family: "Noto Sans", serif;
-    font-size: 22px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.375rem;
     flex-direction: column;
-    list-style-type: disc;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 15vh;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+    text-align: center;
+    list-style-position: inside;
 }
 
+/* Rodapé - mantendo estilo original */
 .rodape {
     background-color: #22D4FD;
     text-align: center;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 2px;
-    font-family: "Oswald", serif;
+    font-size: 1.25rem;
+    padding: 1rem;
+    font-family: "Oswald", sans-serif;
     font-weight: 600;
-    bottom: 0;
     width: 100%;
+    margin-top: auto;
+}
+
+/* Apenas ajustes de responsividade SEM alterar posições */
+@media (max-width: 768px) {
+    .cabecalho_menu {
+        gap: 20px;
+    }
+    
+    .cabecalho_menu_link {
+        font-size: 18px;
+    }
+    
+    .boasvindas {
+        padding: 1.5rem;
+    }
+    
+    .Nome_titulo, .habilidades_texto_titulo {
+        font-size: 1.6rem;
+    }
+    
+    .icon_informacoes, .subtitulo, .habilidades_texto_subtitulo {
+        font-size: 1.2rem;
+    }
+    
+    .icon_contatos {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho {
+        padding: 1% 0 0 3%;
+    }
+    
+    .cabecalho_menu {
+        gap: 15px;
+    }
+    
+    .cabecalho_menu_link {
+        font-size: 16px;
+    }
+    
+    .boasvindas {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+    
+    .Nome_titulo, .habilidades_texto_titulo {
+        font-size: 1.4rem;
+    }
+    
+    .icon_informacoes, .subtitulo, .habilidades_texto_subtitulo {
+        font-size: 1.1rem;
+    }
+    
+    .icon_contatos {
+        width: 4rem;
+        height: 4rem;
+    }
+    
+    .rodape {
+        font-size: 1.1rem;
+    }
 }

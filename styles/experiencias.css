@@ -28,53 +28,43 @@ body {
     color: #898989;
 }
 
-
-.timeline {
-    position: relative;
-    max-width: 800px;
-    margin: auto;
+h1{
+    text-align: center;
+}
+.tech_informatica{
+    padding: 23px;
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    margin-top: 10vh;
+    margin-left: 40vh;
+    display: flex;
+    align-items: center;
+    width: fit-content; 
 }
 
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #ccc;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
+.tech_subtitulo{
+    text-align: left;
+    color: white;
+    list-style-type: disc;
+    font-family: "Noto Sans", serif;
+    font-weight: 400px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
-
-.container {
-    padding: 10px 40px;
-    position: relative;
-    width: 50%;
-}
-
-
-.container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid #ccc;
-    top: 15px;
-    border-radius: 50%;
-}
-
 
 .surdi {
     padding: 23px;
-    display: flex;
-    background-color: rgb(11, 11, 11);
+    background-color: #2d2d2d;
     border-radius: 10px;
     margin-top: 10vh;
-    margin-right: 20vh;
-
+    margin-left: 40vh;
+    display: flex;
+    align-items: center;
+    width: fit-content; 
 }
+
 .surdi_subtitulo{
     text-align: left;
     color: white;
@@ -83,27 +73,21 @@ body {
     font-weight: 400px;
     font-size: 17px;
     display: flex;
+    flex-direction: column;
+    margin-right: 7vh;
     gap: 5px;
 
 }
-.tech_informatica{
-    padding: 20px;
-    color: white;
-    background-color: #242424;
-    font-family: "Noto Sans", serif;
-    font-weight: 400px;
+
+.cs_informatica{
+    padding: 23px;
+    background-color: #2d2d2d;
     border-radius: 10px;
     margin-top: 10vh;
-    margin-right: 6vh;
-}
-.cs_informatica{
-    padding: 20px;
-    color: white;
-    background-color: #242424;
-    font-family: "Noto Sans", serif;
-    font-weight: 400px;
-    border-radius: 10px;
-    margin-top: 35vh;
+    margin-left: 40vh;
+    display: flex;
+    align-items: center;
+    width: fit-content; 
 }
 
 
