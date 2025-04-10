@@ -27,22 +27,35 @@ body {
 .cabecalho_menu_link:hover {
     color: #898989;
 }
-
-h1{
-    text-align: center;
+.timeline{
+    position: absolute;
+    width: 6px;
+    background-color: #ffffff;
+    top: 2vh;
+    bottom: none;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 10px;
 }
-.tech_informatica{
-    padding: 23px;
+
+h1 {
+    font-size: 21px;
+    font-weight: 600;
+    color: #22D4FD;
+}
+
+.tech_informatica {
+    padding: 20px;
     background-color: #2d2d2d;
     border-radius: 10px;
-    margin-top: 10vh;
-    margin-left: 40vh;
+    margin-top: 15vh;
+    margin-left: -90vh;
     display: flex;
     align-items: center;
-    width: fit-content; 
+    width: 80vh;
 }
 
-.tech_subtitulo{
+.tech_subtitulo {
     text-align: left;
     color: white;
     list-style-type: disc;
@@ -53,19 +66,26 @@ h1{
     flex-direction: column;
     gap: 5px;
 }
-
+.ano_tech_informatica {
+    position: absolute;
+    color: #ffffff;
+    font-size: 35px;
+    font-family: "Noto Sans", serif;
+    left: 50%;
+    top: 23%;
+}
 .surdi {
-    padding: 23px;
+    padding: 20px;
     background-color: #2d2d2d;
     border-radius: 10px;
-    margin-top: 10vh;
-    margin-left: 40vh;
+    margin-top: 5vh;
+    margin-left: 5vh;
     display: flex;
     align-items: center;
-    width: fit-content; 
+    width: 80vh;
 }
 
-.surdi_subtitulo{
+.surdi_subtitulo {
     text-align: left;
     color: white;
     list-style-type: disc;
@@ -78,16 +98,97 @@ h1{
     gap: 5px;
 
 }
-
-.cs_informatica{
-    padding: 23px;
+.ano_surdi {
+    position: absolute;
+    color: #ffffff;
+    font-size: 35px;
+    font-family: "Noto Sans", serif;
+    right: 50%;
+    top: 55%;
+}
+.cs_informatica {
+    padding: 20px;
     background-color: #2d2d2d;
     border-radius: 10px;
-    margin-top: 10vh;
-    margin-left: 40vh;
+    margin-top: 5vh;
+    margin-left: -90vh;
     display: flex;
     align-items: center;
-    width: fit-content; 
+    width: 80vh;
 }
 
+.cs_subtitulo {
+    text-align: left;
+    color: white;
+    list-style-type: disc;
+    font-family: "Noto Sans", serif;
+    font-weight: 400px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 7vh;
+    gap: 5px;
 
+}
+.ano_cs_informatica {
+    position: absolute;
+    color: #ffffff;
+    font-size: 35px;
+    font-family: "Noto Sans", serif;
+    left: 50%;
+    top: 80%;
+}
+
+.restaurante_parada {
+    padding: 20px;
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    margin-top: 5vh;
+    margin-left: 5vh;
+    margin-bottom: 3vh;
+    display: flex;
+    align-items: center;
+    width: 80vh;
+}
+
+.restaurante_parada_subtitulo {
+    text-align: left;
+    color: white;
+    list-style-type: disc;
+    font-family: "Noto Sans", serif;
+    font-weight: 400px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 7vh;
+    gap: 5px;
+}
+.ano_restaurante {
+    position: absolute;
+    color: #ffffff;
+    font-size: 35px;
+    font-family: "Noto Sans", serif;
+    right: 50%;
+    top: 105%;
+}
+@media (max-width: 768px) {
+    .ano_tech_informatica,
+    .ano_surdi,
+    .ano_cs_informatica,
+    .ano_restaurante {
+        position: static;
+        display: block;
+        text-align: center;
+        margin: 10% auto;
+        width: 100%;
+    }
+    
+    .tech_informatica,
+    .surdi,
+    .cs_informatica,
+    .restaurante_parada {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 90%;
+    }
+}
