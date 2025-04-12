@@ -9,7 +9,6 @@ body {
     flex-direction: column;
 }
 
-/* Cabeçalho - mantendo o estilo original */
 .cabecalho {
     padding: 1% 0 0 1%;
 }
@@ -32,7 +31,6 @@ body {
     color: #898989;
 }
 
-/* Seção de boas-vindas - mantendo layout original */
 .boasvindas {
     display: flex;
     flex-direction: column;
@@ -118,40 +116,42 @@ body {
 
 }
 
-
 .rodape {
     background-color: #22D4FD;
     text-align: center;
-    font-size: 1.25rem;
-    padding: 1rem;
-    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    size: 10px;
+    padding: 10px;
+    border-radius: 2px;
+    font-family: "Oswald", serif;
     font-weight: 600;
-    width: 100%;
-    margin-top: auto;
-}
 
+}
 /* Apenas ajustes de responsividade SEM alterar posições */
 @media (max-width: 768px) {
     .cabecalho_menu {
         gap: 20px;
     }
-    
+
     .cabecalho_menu_link {
         font-size: 18px;
     }
-    
+
     .boasvindas {
         padding: 1.5rem;
     }
-    
-    .Nome_titulo, .habilidades_texto_titulo {
+
+    .Nome_titulo,
+    .habilidades_texto_titulo {
         font-size: 1.6rem;
     }
-    
-    .icon_informacoes, .subtitulo, .habilidades_texto_subtitulo {
+
+    .icon_informacoes,
+    .subtitulo,
+    .habilidades_texto_subtitulo {
         font-size: 1.2rem;
     }
-    
+
     .icon_contatos {
         width: 4.5rem;
         height: 4.5rem;
@@ -162,33 +162,36 @@ body {
     .cabecalho {
         padding: 1% 0 0 3%;
     }
-    
+
     .cabecalho_menu {
         gap: 15px;
     }
-    
+
     .cabecalho_menu_link {
         font-size: 16px;
     }
-    
+
     .boasvindas {
         padding: 1rem;
         gap: 1.5rem;
     }
-    
-    .Nome_titulo, .habilidades_texto_titulo {
+
+    .Nome_titulo,
+    .habilidades_texto_titulo {
         font-size: 1.4rem;
     }
-    
-    .icon_informacoes, .subtitulo, .habilidades_texto_subtitulo {
+
+    .icon_informacoes,
+    .subtitulo,
+    .habilidades_texto_subtitulo {
         font-size: 1.1rem;
     }
-    
+
     .icon_contatos {
         width: 4rem;
         height: 4rem;
     }
-    
+
     .rodape {
         font-size: 1.1rem;
     }
