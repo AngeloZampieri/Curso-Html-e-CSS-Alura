@@ -8,6 +8,12 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
+    position: relative;
+}
+
+.main-content {
+    flex: 1;
+    padding-bottom: 60px;
 }
 
 .cabecalho {
@@ -39,6 +45,7 @@ body {
     align-items: center;
     gap: 2rem;
     flex: 1;
+    position: relative;
 }
 
 .Experiencias_conteudo {
@@ -47,14 +54,25 @@ body {
     position: absolute;
     width: 6px;
     background-color: #ffffff;
-    top: 2vh;
+    top: 16vh;
     bottom: none;
     left: 50%;
     margin-left: -3px;
     border-radius: 10px;
 }
 
-h1 {
+h1{
+    text-align: center;
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: "Noto Sans", serif;
+    background-color:#2f2f2f;
+    padding: 3vh;
+    border-radius: 2vh;
+}
+
+h2 {
     font-size: 21px;
     font-weight: 600;
     color: #22D4FD;
@@ -66,27 +84,29 @@ h1 {
     padding: 20px;
     background-color: #2d2d2d;
     border-radius: 10px;
-    margin-top: 15vh;
+    margin-top: 8vh;
     margin-left: -90vh;
     display: flex;
     align-items: left;
     width: 80vh;
     color: white;
     font-family: "Noto Sans", serif;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 17px;
     flex-direction: column;
     gap: 5px;
+    position: relative;
 }
 
 .ano_tech_informatica {
-    position:absolute;
+    position: absolute;
     color: #ffffff;
     font-size: 30px;
     font-family: "Noto Sans", serif;
     left: 50%;
-    top: 25%;
+    top: 35%;
 }
+
 .surdi {
     padding: 20px;
     background-color: #2d2d2d;
@@ -98,10 +118,11 @@ h1 {
     width: 80vh;
     color: white;
     font-family: "Noto Sans", serif;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 17px;
     flex-direction: column;
     gap: 5px;
+    position: relative;
 }
 
 .ano_surdi {
@@ -110,8 +131,9 @@ h1 {
     font-size: 35px;
     font-family: "Noto Sans", serif;
     right: 50%;
-    top: 55%;
+    top: 60%;
 }
+
 .cs_informatica {
     padding: 20px;
     background-color: #2d2d2d;
@@ -124,9 +146,10 @@ h1 {
     color: white;
     gap: 5px;
     font-family: "Noto Sans", serif;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 17px;
     flex-direction: column;
+    position: relative;
 }
 
 .ano_cs_informatica {
@@ -135,7 +158,7 @@ h1 {
     font-size: 35px;
     font-family: "Noto Sans", serif;
     left: 50%;
-    top: 80%;
+    top: 88%;
 }
 
 .restaurante_parada {
@@ -149,10 +172,11 @@ h1 {
     width: 80vh;
     color: white;
     font-family: "Noto Sans", serif;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 17px;
     flex-direction: column;
     gap: 5px;
+    position: relative;
 }
 
 .ano_restaurante {
@@ -161,31 +185,26 @@ h1 {
     font-size: 35px;
     font-family: "Noto Sans", serif;
     right: 50%;
-    top: 105%;
+    top: 115%;
 }
 
 .rodape {
     background-color: #22D4FD;
     text-align: center;
     font-size: 20px;
-    size: 10px;
     padding: 10px;
     border-radius: 2px;
     font-family: "Oswald", serif;
     font-weight: 600;
-    
+    width: 100%;
+    position: absolute;
+    margin-bottom: 0;
+    margin-top: 15%;
 }
 
 @media (max-width: 768px) {
-    .ano_tech_informatica,
-    .ano_surdi,
-    .ano_cs_informatica,
-    .ano_restaurante {
-        position: static;
-        display: block;
-        text-align: center;
-        margin: 10% auto;
-        width: 100%;
+    .Experiencias_conteudo {
+        display: none;
     }
     
     .tech_informatica,
@@ -195,7 +214,24 @@ h1 {
         margin-left: auto !important;
         margin-right: auto !important;
         width: 90%;
+        margin-top: 2rem !important;
+    }
+    
+    .ano_tech_informatica,
+    .ano_surdi,
+    .ano_cs_informatica,
+    .ano_restaurante {
+        position: static;
+        display: block;
+        text-align: center;
+        margin: 10px auto;
+        width: 100%;
+        top: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .rodape {
+        position: relative;
     }
 }
-
-
