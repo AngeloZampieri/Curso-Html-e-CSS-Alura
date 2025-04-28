@@ -110,7 +110,7 @@ h2 {
     font-size: 30px;
     font-family: "Noto Sans", serif;
     left: 50%;
-    top: 35%;
+    top: 130%;
 }
 
 .surdi {
@@ -137,7 +137,7 @@ h2 {
     font-size: 35px;
     font-family: "Noto Sans", serif;
     right: 50%;
-    top: 60%;
+    top: 230%;
 }
 
 .cs_informatica {
@@ -164,7 +164,7 @@ h2 {
     font-size: 35px;
     font-family: "Noto Sans", serif;
     left: 50%;
-    top: 88%;
+    top: 340%;
 }
 
 .restaurante_parada {
@@ -191,7 +191,7 @@ h2 {
     font-size: 35px;
     font-family: "Noto Sans", serif;
     right: 50%;
-    top: 115%;
+    top: 450%;
 }
 
 .rodape {
@@ -204,7 +204,7 @@ h2 {
     font-weight: 600;
     width: 100%;
     margin-bottom: 0%;
-    margin-top: 50%;
+    margin-top: 75%;
 }
 
 @media (max-width: 768px) {
