@@ -125,3 +125,29 @@ body {
         margin-left: 50%;
     }
 }
+
+@media (max-width: 420px){
+    .cabecalho_menu {
+        gap: 0.50vh;
+    }
+    .cabecalho_menu_link{
+        margin-left: 0.30vh;
+        font-size: 1.3rem;
+    }
+    .formacao_itens{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        font-size: 2rem;
+        gap: 3vh;
+    }
+    .icon_estudos{
+        margin-left: 44%;  
+        
+    }
+    .faculdade, .alura, .curso_hotmart, .curso_informatica{
+        font-size: 1.5rem;
+        margin-top: 1vh;
+    }
+}

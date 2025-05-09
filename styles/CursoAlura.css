@@ -164,3 +164,39 @@ body {
     }
 
 }
+
+@media (max-width: 420px){
+    .apresentacao{
+        flex-direction: column-reverse;
+        gap: 5vh;
+    }
+    .apresentacao_conteudo{
+        margin-left: 0vh;
+        text-align: center;
+        align-items: center;
+    }
+    .cabecalho_menu {
+        gap: 0.50vh;
+    }
+    .cabecalho_menu_link{
+        margin-left: 0.30vh;
+        font-size: 1rem;
+    }
+    .jovem_empresario {
+        width: 50%;
+        align-items: center;
+        margin-left: 40%;
+    }
+    .saudacoes{
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    .titulo{
+        font-size: 1.5rem;
+    }
+    .botao_instagram_linkedin {
+    width: 70%;
+    }
+
+
+}
